@@ -1,5 +1,4 @@
 FROM jupyter/scipy-notebook
-
 RUN pip install joblib
 
 USER root
@@ -16,4 +15,4 @@ ENV RAW_DATA_FILE=Housing.csv
 COPY Housing.csv ./raw_data/Housing.csv
 COPY preprocessing.py ./preprocessing.py
 COPY train.py ./train.py
-COPY test.py ./test.py 
+COPY test.py ./test.py
